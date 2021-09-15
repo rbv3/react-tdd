@@ -23,8 +23,6 @@ describe('RestaurantList', () => {
     expect(loadRestaurants).toHaveBeenCalled();
   });
   it('displays the restaurants', () => {
-    const noop = () => {}; //no operation
-
     const {queryByText} = context;
 
     expect(queryByText('Sushi Place')).not.toBeNull();
